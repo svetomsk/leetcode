@@ -1,4 +1,4 @@
-public class RemoveStart_2390 {
+public class RemoveStars_2390 {
     class Solution {
         public String removeStars(String s) {
             String reversed = new StringBuilder(s).reverse().toString();
