@@ -3,6 +3,7 @@ public class RotateString_796 {
         /**
          * Time complexity O(n)
          * Space complexity O(n)
+         * https://leetcode.com/problems/rotate-string/
          */
         public boolean rotateString(String s, String goal) {
             if (s.length() != goal.length()) return false;

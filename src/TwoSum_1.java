@@ -6,6 +6,7 @@ public class TwoSum_1 {
         /**
          * Time complexity O(n)
          * Space complexity O(n)
+         * https://leetcode.com/problems/two-sum/
          */
         public int[] twoSum(int[] nums, int target) {
             int n = nums.length;

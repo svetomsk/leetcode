@@ -6,6 +6,7 @@ public class ValidateBSTree_78 {
         /**
          * Time complexity O(n)
          * Space complexity O(n)
+         * https://leetcode.com/problems/validate-binary-search-tree/
          */
         public boolean isValidBST(TreeNode root) {
             List<Integer> sorted = new ArrayList<>();

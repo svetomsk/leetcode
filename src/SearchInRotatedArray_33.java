@@ -3,6 +3,7 @@ public class SearchInRotatedArray_33 {
         /**
          * Time complexity O(log(n))
          * Space complexity O(1)
+         * https://leetcode.com/problems/search-in-rotated-sorted-array/
          */
         public int search(int[] nums, int target) {
             int k = findShiftPlace(nums);

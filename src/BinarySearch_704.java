@@ -3,6 +3,7 @@ public class BinarySearch_704 {
         /**
          * Time complexity: O(log(n))
          * Space complexity: O(1)
+         * https://leetcode.com/problems/binary-search/
          */
         public int search(int[] nums, int target) {
             int left = 0;

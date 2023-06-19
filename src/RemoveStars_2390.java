@@ -3,6 +3,7 @@ public class RemoveStars_2390 {
         /**
          * Time complexity O(n)
          * Space complexity O(n)
+         * https://leetcode.com/problems/removing-stars-from-a-string/
          */
         public String removeStars(String s) {
             String reversed = new StringBuilder(s).reverse().toString();

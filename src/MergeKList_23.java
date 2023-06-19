@@ -5,6 +5,7 @@ public class MergeKList_23 {
          * n - number of elements in list
          * Time complexity O(n * k) ~ O(k)
          * Space complexity O(1)
+         * https://leetcode.com/problems/merge-k-sorted-lists/
          */
         public ListNode mergeKLists(ListNode[] lists) {
             ListNode root = new ListNode(-1);

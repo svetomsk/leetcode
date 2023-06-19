@@ -3,6 +3,7 @@ public class TrappingRainWater_42 {
         /**
          * Time complexity O(n)
          * Space complexity O(1)
+         * https://leetcode.com/problems/trapping-rain-water/
          */
         public int trap(int[] height) {
             int n = height.length;
