@@ -3,6 +3,10 @@ import java.util.List;
 
 public class ValidateBSTree_78 {
     class Solution {
+        /**
+         * Time complexity O(n)
+         * Space complexity O(n)
+         */
         public boolean isValidBST(TreeNode root) {
             List<Integer> sorted = new ArrayList<>();
             traverse(root, sorted);

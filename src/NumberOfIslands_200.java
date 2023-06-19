@@ -1,5 +1,9 @@
 public class NumberOfIslands_200 {
     class Solution {
+        /**
+         * Time complexity O(n * m)
+         * Space complexity O(1)
+         */
         public int numIslands(char[][] grid) {
             int n = grid.length;
             int m = grid[0].length;

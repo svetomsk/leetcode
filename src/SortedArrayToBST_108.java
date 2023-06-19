@@ -1,5 +1,9 @@
 public class SortedArrayToBST_108 {
     class Solution {
+        /**
+         * Time complexity O(n)
+         * Space complexity O(n)
+         */
         public TreeNode sortedArrayToBST(int[] nums) {
             return constructTree(nums, 0, nums.length - 1);
         }

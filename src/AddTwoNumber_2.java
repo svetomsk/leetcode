@@ -1,5 +1,11 @@
 public class AddTwoNumber_2 {
     class Solution {
+        /**
+         * n = length of l1
+         * m = length of l2
+         * Time complexity: O(max(n, m))
+         * Space complexity: O(n + m)
+         */
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             int overhead = 0;
             ListNode root = new ListNode(-1);

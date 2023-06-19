@@ -1,13 +1,11 @@
 public class SearchInRotatedArray_33 {
-    class Solution {
+    static class Solution {
+        /**
+         * Time complexity O(log(n))
+         * Space complexity O(1)
+         */
         public int search(int[] nums, int target) {
-            int k = 0;
-            for (int i = 1; i < nums.length; i++) {
-                if (nums[i] < nums[i - 1]) {
-                    k = i;
-                    break;
-                }
-            }
+            int k = findShiftPlace(nums);
 
             int result = -1;
             // result = Arrays.binarySearch(nums, k, nums.length, target);
@@ -16,6 +14,26 @@ public class SearchInRotatedArray_33 {
             // result = Arrays.binarySearch(nums, 0, k, target);
             result = binarySearch(nums, 0, k, target);
             if (result >= 0) return result;
+            return -1;
+        }
+
+        public int findShiftPlace(int[] arr) {
+            int left = 0;
+            int right = arr.length - 1;
+            if (arr[left] <= arr[right]) return 0;
+            while (left <= right) {
+                int middle = (right + left) / 2;
+                if (arr[left] > arr[middle] && arr[middle] < arr[right]) {
+                    right = middle;
+                } else if (arr[left] < arr[middle] && arr[middle] > arr[right]) {
+                    left = middle;
+                } else {
+                    if (right - left == 1) {
+                        return left + 1;
+                    }
+                    left = middle;
+                }
+            }
             return -1;
         }
 

@@ -1,5 +1,9 @@
 public class TrappingRainWater_42 {
     class Solution {
+        /**
+         * Time complexity O(n)
+         * Space complexity O(1)
+         */
         public int trap(int[] height) {
             int n = height.length;
             int left = 0;

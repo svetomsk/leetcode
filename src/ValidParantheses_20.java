@@ -2,6 +2,10 @@ import java.util.*;
 
 public class ValidParantheses_20 {
     class Solution {
+        /**
+         * Time complexity O(n)
+         * Space complexity O(n)
+         */
         public boolean isValid(String s) {
             LinkedList<Character> q = new LinkedList<>();
             q.add(s.charAt(0));
